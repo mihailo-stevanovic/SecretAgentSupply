@@ -1,0 +1,29 @@
+/* Common styles */
+html{
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+/* Header */
+header.main{
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+header.main span{
+  margin: 0.66rem 0;
+}
+header.main img{
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
