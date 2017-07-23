@@ -5,7 +5,7 @@ html{
   color: white;
 }
 .container{
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .flex-center, .flex-column, .flex-between{
@@ -67,10 +67,11 @@ nav{
 nav ul{
   list-style: none;
 }
+nav ul li, nav span{
+  margin: 0.75rem 0;
+}
 nav ul li{
   display: inline-block;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 nav a{
   text-decoration: none;
@@ -82,7 +83,7 @@ nav span{
 
 /* Product grid*/
 .product-grid{
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 .product-grid article{
   width: 30%;
@@ -101,6 +102,7 @@ nav span{
   text-align: center;
   width: 100%;
   padding: 0.5em 0;
+  margin-bottom: 3rem;
 }
 /* Location & Hours */
 .locationHours section{
@@ -119,4 +121,53 @@ nav span{
 footer{
   height: 5rem;
   background-color: black;
+}
+
+
+/* <1024px Displays */
+@media only screen and (max-width: 1024px){
+  .container{
+    width: 100%;
+  }
+  /* Navigation bar*/
+  nav ul li{
+    display: none;
+  }
+  nav span{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Product grid */
+  .product-grid article{
+    width: 47%;
+  }
+  .product-grid{
+    flex-wrap: wrap;
+  }
+}
+/* <470px Displays */
+@media only screen and (max-width: 470px){
+  .container{
+    width: 90%;
+  }
+  /* Main banner */
+  .main-banner{
+    height: 15rem;
+  }
+  .banner-caption{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+  .banner-caption p{
+    font-size: 0.77rem;
+  }
+  .banner-caption h1{
+    font-size: 1rem;
+  }
+
+  /* Product grid */
+  .product-grid article{
+    width: 100%;
+  }
 }
