@@ -115,3 +115,8 @@ nav span{
   color: black;
   margin-top: 0.15rem;
 }
+/* Footer */
+footer{
+  height: 5rem;
+  background-color: black;
+}
