@@ -102,3 +102,16 @@ nav span{
   width: 100%;
   padding: 0.5em 0;
 }
+/* Location & Hours */
+.locationHours section{
+  width: 35%;
+  margin-bottom: 4rem;
+}
+.locationHours section h3{
+  background-color: black;
+  padding: 1rem 2rem;
+}
+.locationHours section p{
+  color: black;
+  margin-top: 0.15rem;
+}
