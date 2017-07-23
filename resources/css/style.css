@@ -7,11 +7,15 @@ html{
   width: 960px;
   margin: 0 auto;
 }
-.flex-container{
+.flex-center, .flex-column{
   display: flex;
+}
+.flex-center{
   align-items: center;
 }
-
+.flex-column{
+  flex-direction: column;
+}
 /* Header */
 header.main{
   background-color: black;
@@ -26,4 +30,29 @@ header.main img{
   margin-left: 0.5rem;
   margin-right: 1rem;
   height: 1.5rem;
+}
+
+/*Main banner */
+header.main-banner{
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-caption{
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  width: 20rem;
+}
+.banner-caption p{
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.banner-caption h1{
+  font-size: 2rem;
 }
