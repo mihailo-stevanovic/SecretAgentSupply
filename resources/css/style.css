@@ -122,6 +122,10 @@ footer{
   height: 5rem;
   background-color: black;
 }
+footer p{
+  width: 960px;
+  text-align: left;
+}
 
 
 /* <1024px Displays */
@@ -145,6 +149,10 @@ footer{
   .product-grid{
     flex-wrap: wrap;
   }
+  /* Footer */
+  footer p{
+    width: auto;
+  }
 }
 /* <470px Displays */
 @media only screen and (max-width: 470px){
@@ -155,8 +163,11 @@ footer{
   .main-banner{
     height: 15rem;
   }
+  .main-banner .container{
+    width: 100%;
+    padding-top: 10rem;
+  }
   .banner-caption{
-    margin-top: 10rem;
     padding: 1rem 2rem;
   }
   .banner-caption p{
@@ -169,5 +180,18 @@ footer{
   /* Product grid */
   .product-grid article{
     width: 100%;
+  }
+
+  /* Locations & Hours */
+  .locationHours{
+    flex-direction: column;
+  }
+  .locationHours section{
+    width: 100%;
+  }
+
+  /* Footer */
+  footer p{
+    text-align: center;
   }
 }
